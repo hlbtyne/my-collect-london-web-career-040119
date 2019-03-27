@@ -1,4 +1,4 @@
-def my_each(array)
+def my_collect(array)
   if array.length == 0
     "Empty"
   else
@@ -12,7 +12,7 @@ def my_each(array)
   end
 end
 
-array = [1, 2, 3, 4]
+array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 
 my_each(array) { |number| number }
 
