@@ -8,7 +8,6 @@ def my_collect(array)
     yield(item)
     i += 1 
     end
-    new_array
   end
 end
 
