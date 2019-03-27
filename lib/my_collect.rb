@@ -6,8 +6,7 @@ def my_collect(array)
     while (i < array.length)
     lang = array[i]
     new_arr = []
-    
-    yield(lang)
+    new_array.push(yield(lang))
     i += 1 
     end
     
@@ -17,6 +16,6 @@ end
 array = ["ruby", "javascript", "python", "objective-c"]
 
 my_collect(array) do |lang|
-  new_array.push(lang.upcase)
+  lang.upcase
 end
 
