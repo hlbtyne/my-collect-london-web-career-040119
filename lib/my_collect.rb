@@ -4,8 +4,8 @@ def my_collect(array)
   else
   i = 0
     while (i < array.length)
-    number = array[i]
-    yield(number)
+    item = array[i]
+    yield(item)
     i += 1 
     end
     array
@@ -14,5 +14,8 @@ end
 
 array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
 
-my_each(array) { |number| number }
+my_collect(array) do |item|
+  new_array = []
+  
+end
 
