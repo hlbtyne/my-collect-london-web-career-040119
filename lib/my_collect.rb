@@ -12,7 +12,7 @@ def my_collect(array)
   end
 end
 
-array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+array = ["ruby", "javascript", "python", "objective-c"]
 
 my_collect(array) do |item|
   new_array = []
