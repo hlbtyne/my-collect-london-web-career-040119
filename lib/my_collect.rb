@@ -4,18 +4,18 @@ def my_collect(array)
   else
   i = 0
     while (i < array.length)
-    item = array[i]
-    yield(item)
+    lang = array[i]
+    new_array = []
+    yield(lang)
     i += 1 
     end
+    new_array
   end
 end
 
 array = ["ruby", "javascript", "python", "objective-c"]
 
-my_collect(array) do |item|
-  new_array = []
-  new_array.push(item.upcase)
-  new_array
+my_collect(array) do |lang|
+  new_array.push(lang.upcase)
 end
 
