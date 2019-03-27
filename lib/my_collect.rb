@@ -4,7 +4,7 @@ def my_collect(array)
   else
   i = 0
     while (i < array.length)
-    new_arr = []
+    new_array = []
     lang = array[i]
     new_array.push(yield(lang))
     i += 1 
