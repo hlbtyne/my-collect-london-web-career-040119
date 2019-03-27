@@ -3,8 +3,8 @@ def my_collect(array)
     "Empty"
   else
   i = 0
+  new_array = []
     while (i < array.length)
-    new_array = []
     lang = array[i]
     new_array.push(yield(lang))
     i += 1 
