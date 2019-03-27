@@ -9,7 +9,7 @@ def my_collect(array)
     new_array.push(yield(lang))
     i += 1 
     end
-    
+    new_array
   end
 end
 
