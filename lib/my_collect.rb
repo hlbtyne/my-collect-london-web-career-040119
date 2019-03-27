@@ -8,6 +8,7 @@ def my_collect(array)
     yield(lang)
     i += 1 
     end
+    
   end
 end
 
@@ -16,6 +17,5 @@ array = ["ruby", "javascript", "python", "objective-c"]
 my_collect(array) do |lang|
   new_array = []
   new_array.push(lang.upcase)
-  new_array
 end
 
